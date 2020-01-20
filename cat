@@ -1,0 +1,6 @@
+# open a file (or create if it doesn't exist) and start a cat prompt
+cat >> <filename>
+#ctrl+d to exit
+
+# read file to terminal
+cat <filename>
