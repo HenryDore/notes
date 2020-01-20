@@ -1,4 +1,4 @@
-#make ssh directory (if doesn't exist)
+#Make ssh directory (if doesn't exist)
 mkdir ~/.ssh
 chmod 700 ~/.ssh
 
@@ -14,5 +14,16 @@ cat <keyname>.pub
 #start ssh agent
 eval $(ssh-agent -s)
 
+#add keys to ssh
+ssh-add ~/.ssh/github
+
 #ssh into github to test
 ssh -T git@github.com
+
+#keychain might be a better way of doing this
+sudo apt-get install keychain
+# setup keychain - ssh-agent management 
+keychain ~/.ssh/id_rsa 
+. ~/.keychain/$HOSTNAME-sh
+keychain --clear
+
