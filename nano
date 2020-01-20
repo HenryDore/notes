@@ -1,0 +1,17 @@
+nano does not use the Shift key in shortcuts. 
+All shortcuts use lowercase letters and unmodified number keys, so Ctrl+G is NOT Ctrl+Shift+G.
+
+ctrl+g to bring up help
+
+"Meta key" = ALT (usually)
+
+^space - move forward a word
+M-space - move backwards a word
+
+^^ (ctrl+6) marks text for cutting
+M-^ copy
+^K cut (Kut) - if no text marked this will cut a while line
+^U paste (uncut)
+
+M-L enables word wrap
+
