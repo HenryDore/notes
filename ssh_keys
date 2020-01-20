@@ -1,0 +1,18 @@
+#make ssh directory (if doesn't exist)
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+
+#touch authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+
+#generate key in github.com format
+ssh-keygen -t rsa -b 4096 -C "henrymonkey@gmail.com"
+
+#output key to terminal
+cat <keyname>.pub
+
+#start ssh agent
+eval $(ssh-agent -s)
+
+#ssh into github to test
+ssh -T git@github.com
