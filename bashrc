@@ -1,0 +1,5 @@
+alias ..='cd ..'
+alias ...='cd ..; cd ..'
+alias ....='cd ..; cd ..; cd ..'
+alias home='cd ~'
+alias root='cd /'
